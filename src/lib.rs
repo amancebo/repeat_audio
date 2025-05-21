@@ -32,6 +32,6 @@ pub fn repeat_audio(min_duration_seconds: f64, input_file_name: &str) {
         write(output_file_name.clone(), &out_samples, sample_rate, 1).unwrap();
         println!("Saved to '{output_file_name}'");
     } else {
-        println!("{min_duration_seconds} seconds is too short; \"{input_file_name}\" would occur only once.\nNo output file will be created.")
+        eprintln!("{min_duration_seconds} seconds is too short; '{input_file_name}' would occur only once.\nNo output file will be created.")
     }
 }
