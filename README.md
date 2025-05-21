@@ -16,3 +16,8 @@ repeat_audio 1 waveform.wav
 will repeat `waveform.wav` until it reaches a duration of at least 1
 second. The output file might then be `waveform_0087-copies.wav`,
 indicating that the waveform was repeated 87 times to reach 1 second.
+
+
+The project can be built with `cargo` as a typical Rust
+project. Alternatively, there is a Python version of the utility that
+has no additional external dependencies.
