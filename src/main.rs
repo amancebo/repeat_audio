@@ -1,6 +1,6 @@
 use clap::Parser;
 use repeat_audio;
-use wavers::WaversError;
+use audio_samples_io::AudioIOError;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -11,7 +11,7 @@ struct Args {
     input_file_name: String,
 }
 
-fn main() -> Result<(), WaversError> {
+fn main() -> Result<(), AudioIOError> {
     let args = Args::parse();
 
     let min_duration_seconds = args.min_duration_seconds;

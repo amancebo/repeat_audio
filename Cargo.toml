@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+audio_samples = "0.10.7"
+audio_samples_io = "0.1.4"
 clap = { version = "4.5.16", features = ["derive"] }
 num-traits = "0.2.18"
 similar = "2.6.0"
-wav = "1.0.0"
-wavers = "1.4.3"
